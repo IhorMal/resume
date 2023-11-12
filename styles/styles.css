@@ -1,0 +1,292 @@
+:root {
+  --text-color: #7d7d7d;
+  --additional-color: #74f7d0;
+  --margin: 34px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+b {
+  font-family: "Inter", sans-serif;
+  color: #474747;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------- */
+
+body {
+  background-color: rgba(116, 113, 98, 0.2);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 2;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  max-width: 381px;
+  padding: 0px 50px;
+}
+
+.main {
+  background-color: #fff;
+  margin: 40px 0px;
+  height: 100%;
+}
+
+.introduction {
+  margin-top: 50px;
+}
+
+.introduction_img {
+  border: solid 3px var(--additional-color);
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: var(--margin);
+}
+
+.title {
+  color: #474747;
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: var(--margin);
+}
+.general-title {
+  font-size: 32px;
+}
+
+.introduction_text {
+  letter-spacing: 0.025rem;
+  margin-bottom: var(--margin);
+}
+
+.introduction_list-link {
+    font-size: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #474747;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  border: solid 2px var(--additional-color);
+  border-radius: 20px;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: transform 0.5s ease;
+}
+
+.introduction_list-link:hover {
+    transform: scale(1.0425);
+    transition: transform 1s ease; 
+}
+
+.introduction_list-link svg{
+    fill: #474747;
+}
+
+.introduction_list li:first-child .introduction_list-link {
+  background-color: var(--additional-color);
+}
+
+.liyn {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.031);
+  margin: 50px 0px;
+}
+
+.services_text {
+  margin-bottom: 40px;
+}
+
+.services_item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_item::before {
+  content: "\2713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+  border: solid 2px var(--additional-color);
+  border-radius: 50%;
+  padding: 3px 5px;
+  height: 17px;
+}
+
+.contact_list {
+    display: flex;
+    align-items: center;
+
+}
+
+.contact {
+    padding-bottom: 30px;
+}
+
+.contact_item {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.contact_item a{
+    border: solid 2px var(--additional-color);
+    display: inline-flex;
+    border-radius: 50%;
+    padding: 10px;
+    fill: #474747;
+    transition: 0.5s ease;
+}
+
+.contact_item a:hover {
+    background-color: var(--additional-color);
+    transform: scale(1.0425);
+    
+}
